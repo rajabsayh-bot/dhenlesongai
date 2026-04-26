@@ -1,4 +1,85 @@
-body{background:#0a0a0a;color:white;font-family:sans-serif}
-.container{max-width:500px;margin:auto;padding:20px}
-textarea{width:100%;padding:10px;margin:10px 0}
-button{padding:10px;background:red;color:white;border:none}
+body {
+  margin:0;
+  font-family:sans-serif;
+  background: radial-gradient(circle at top, #1a0f2e, #05010a);
+  color:white;
+}
+
+/* NAVBAR */
+.navbar {
+  display:flex;
+  align-items:center;
+  padding:15px;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+.menu-btn {
+  font-size:24px;
+  cursor:pointer;
+  margin-right:10px;
+}
+
+.logo {
+  font-size:20px;
+  font-weight:bold;
+  background:linear-gradient(90deg,#8a2be2,#ff4ecd);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position:fixed;
+  top:0;
+  left:-250px;
+  width:200px;
+  height:100%;
+  background:#111;
+  padding:20px;
+  transition:0.3s;
+  z-index:999;
+}
+
+.sidebar a {
+  display:block;
+  color:white;
+  margin:15px 0;
+  text-decoration:none;
+}
+
+.sidebar.active {
+  left:0;
+}
+
+/* MAIN */
+.container {
+  padding:20px;
+}
+
+textarea {
+  width:100%;
+  padding:15px;
+  border-radius:12px;
+  border:none;
+  background:rgba(255,255,255,0.05);
+  color:white;
+  margin-top:10px;
+}
+
+.btn-main {
+  margin-top:15px;
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(90deg,#8a2be2,#ff4ecd);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* RESULT */
+#result {
+  margin-top:20px;
+  }
