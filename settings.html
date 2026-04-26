@@ -9,15 +9,17 @@
 </head>
 <body>
 
+<div class="navbar">
+  <div class="menu-btn" onclick="history.back()">←</div>
+  <div class="logo">Settings</div>
+</div>
+
 <div class="container">
-<h1>API Keys</h1>
+  <h2>API Keys</h2>
 
-<textarea id="keysInput" placeholder="Masukkan banyak API key, pisah enter"></textarea>
-<button onclick="saveKeys()">Save</button>
+  <textarea id="keysInput" placeholder="1 key per baris"></textarea>
 
-<ul id="list"></ul>
-
-<a href="index.html">Back</a>
+  <button class="btn-main" onclick="saveKeys()">💾 Save</button>
 </div>
 
 </body>
