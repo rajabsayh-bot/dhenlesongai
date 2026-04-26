@@ -9,17 +9,30 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <div class="logo">🎵 Dhenlee AI</div>
+</div>
+
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+  <a href="index.html">🏠 Home</a>
+  <a href="settings.html">⚙️ Settings</a>
+</div>
+
+<!-- MAIN -->
 <div class="container">
-<h1>Dhenlee AI</h1>
 
-<textarea id="prompt" placeholder="Describe your song..."></textarea>
+  <h2>Generate Music</h2>
 
-<button onclick="generate()">Generate</button>
+  <textarea id="prompt" placeholder="Describe your song..."></textarea>
 
-<div id="result"></div>
+  <button onclick="generate()" class="btn-main">✨ Generate Music</button>
 
-<a href="settings.html">Settings</a>
+  <div id="result"></div>
+
 </div>
 
 </body>
-</html>
+  </html>
